@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Library System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h4>Student Library System</h4>
+    </header>
+    <main>
+      <div class="left">
+        <h5>Students details</h5>
+        <div class="dethed">
+            <h5 class="name">Name</h5>
+            <h5 class="Fees">Fees</h5>
+            <h5 class="starting_date">Starting Date</h5>
+            <h5 class="Edit">Edit</h5>
+            <h5 class="Delete">Delete</h5>
+        </div>
+        <div class="stddata">
+            <h5 class="name">Manish</h5>
+            <h5 class="Fees">2000</h5>
+            <h5 class="starting_date">9-10-2006</h5>
+            <button class="stdbtn">Edit</button>
+            <button class="stdbtn">Delete</button>
+        </div>
+
+
+      </div>
+      <div class="right">
+        <form class="form">
+          <label for="name">Name :-</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="mobile_number">Mobile Number :-</label>
+          <input type="tel" id="mobile_number" name="mobile_number" />
+
+          <label for="starting_date">Starting Date :-</label>
+          <input type="date" id="starting_date" name="starting_date" />
+
+          <label for="fees">Fees :-</label>
+          <input type="number" id="fees" name="fees" />
+
+          <label class="radio">Morning Or Evening :-</label>
+          <input
+            class="radio"
+            type="radio"
+            id="morning"
+            name="morning_evening"
+            value="morning"
+          />
+          <label class="radio" for="morning">Morning :-</label>
+          <input
+            class="radio"
+            type="radio"
+            id="evening"
+            name="morning_evening"
+            value="evening"
+          />
+          <label class="radio" for="evening">Evening</label>
+          <button type="submit" class="submitbtn" id="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
