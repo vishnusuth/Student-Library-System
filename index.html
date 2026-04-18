@@ -14,25 +14,20 @@
     <main>
       <div class="left">
         <h5>Students details</h5>
+
         <div class="dethed">
-            <h5 class="name">Name</h5>
-            <h5 class="Fees">Fees</h5>
-            <h5 class="starting_date">Starting Date</h5>
-            <h5 class="Edit">Edit</h5>
-            <h5 class="Delete">Delete</h5>
-        </div>
-        <div class="stddata">
-            <h5 class="name">Manish</h5>
-            <h5 class="Fees">2000</h5>
-            <h5 class="starting_date">9-10-2006</h5>
-            <button class="stdbtn">Edit</button>
-            <button class="stdbtn">Delete</button>
+          <h5 class="name">Name</h5>
+          <h5 class="Fees">Fees</h5>
+          <h5 class="starting_date">Starting Date</h5>
+          <h5 class="Edit">Edit</h5>
+          <h5 class="Delete">Delete</h5>
         </div>
 
-
+        <div id="student-list"></div>
+        <!-- yaha dynamic data aayega -->
       </div>
       <div class="right">
-        <form class="form">
+        <form id="form" class="form">
           <label for="name">Name :-</label>
           <input type="text" id="name" name="name" />
 
@@ -50,7 +45,7 @@
             class="radio"
             type="radio"
             id="morning"
-            name="morning_evening"
+            name="shift"
             value="morning"
           />
           <label class="radio" for="morning">Morning :-</label>
@@ -58,7 +53,7 @@
             class="radio"
             type="radio"
             id="evening"
-            name="morning_evening"
+            name="shift"
             value="evening"
           />
           <label class="radio" for="evening">Evening</label>
@@ -67,4 +62,5 @@
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
